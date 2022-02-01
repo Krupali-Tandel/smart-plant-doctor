@@ -51,7 +51,7 @@ app.get("/" , (req, res)=>{
     res.render('index');
 })
 
-app.get("/tomato" , (req , res)=>{
+app.get("/Tomato" , (req , res)=>{
     res.render('tomato');
 })
 
