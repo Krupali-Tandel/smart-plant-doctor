@@ -12,20 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-  .open-button{
+  #openbutton{
   
     margin : 3rem ;
    position : fixed ;
    right : 0px ;
    border-radius : 4rem ;
-  
+  display: none;
   }
 
   #mainbot {
-  display : none;
+ float : right ;
+margin : 1rem; 
+
   }
 
- .close-button{
+ #closebutton{
    margin : 3rem ;
    position : fixed ;
    right : 0px ;
@@ -47,7 +49,7 @@
     <div class="bigcontainer">
       <div class="head_container">
         <div class="logo">
-          <img src="static/pictures/rodeo.png" alt="" id="logoimage">
+          <img src="static/pictures/plant_logo1.png" alt="" id="logoimage">
         </div>
         <div class="navbar">
         <ul class="navbarlist">
@@ -72,12 +74,13 @@
       </div>
     </div>
     <div id="open">
-    <button class="open-button" onclick="openForm()">
+    <button id ="openbutton" onclick >
     <i class='far fa-comments icon' style='font-size:48px;color : black;'></i></button>
-    <button class="close-button" onclick = "closeform()">
+    <button id  ="closebutton" onclick = "closeform()">
     <i class="fa fa-close closeicon" style="font-size:48px;color: black;"></i></button>
-    <iframe id = "mainbot" src='https://webchat.botframework.com/embed/ourTPKB1?s=SlmwiMhUxdk.XA9MTxlwxNp6JAw7_zayS-vlF1AFz3WV6CBHQvGWj-4'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+    <iframe id = "mainbot" src='https://webchat.botframework.com/embed/ourTPKB1?s=SlmwiMhUxdk.XA9MTxlwxNp6JAw7_zayS-vlF1AFz3WV6CBHQvGWj-4'  style='min-width: 400px; width: 30%; min-height: 500px;'></iframe>
     </div>
+
    
    
     
@@ -157,13 +160,5 @@
 
 </body>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<script>
-let chatbot = document.getElementByID('chatbot');
-
-chatbot.addEventListener('onclick' , ()=>{
-
-})
-
-</script>
 
 </html>
